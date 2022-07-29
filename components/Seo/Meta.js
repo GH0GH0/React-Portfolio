@@ -9,15 +9,15 @@ const Meta = ({ children }) => {
         <meta name="description" content={METADATA.description} />
         <meta
           name="keywords"
-          content="Shubh Porwal, Full Stack Developer, Software Developer, Software Engineer, Portfolio, Devfolio, Web Development, PDEU, Web Developer"
+          content="Ghouzali Abderrahmani, Full Stack Developer, Software Developer, Software Engineer, Portfolio, Devfolio, Web Development, PDEU, Web Developer"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
-        <meta name="author" content="Shubh Porwal" />
+        <meta name="author" content="Ghouzali Abderrahmani" />
         <meta
           name="copyright"
-          content="All rights reserved, 2021. Shubh Porwal"
+          content="All rights reserved, 2022. Ghouzali Abderrahmani"
         />
         <meta httpEquiv="content-language" content="en" />
 

@@ -13,7 +13,7 @@ const Work = ({ clientWidth }) => {
   const macRef = useRef(null);
 
   // Add more "false" elements when the job profiles increase. Rn it is only one -> [Spacenos]
-  const [checked, setChecked] = useState([false]);
+  const [checked, setChecked] = useState([true]);
   const [isActive, setIsActive] = useState(false);
   const [gunStyle, setGunStyle] = useState({});
 
@@ -32,7 +32,7 @@ const Work = ({ clientWidth }) => {
 
     ScrollTrigger.create({
       trigger: targetSection.current.querySelector(".work-wrapper"),
-      start: "100px bottom",
+      start: "200px bottom",
       end: `center center`,
       animation: revealTl,
       scrub: 0,
@@ -43,22 +43,22 @@ const Work = ({ clientWidth }) => {
     const height = 0;
     height = inputRef.current.offsetTop - 15;
     checked[position] = true;
-    // switch (position) {
-    //   case 0:
-    //     height = inputRef.current.offsetTop - 115;
-    //     checked[position] = true;
-    //     break;
-    //   case 1:
-    //     height = inputRef.current.offsetTop - 55;
-    //     checked[position] = true;
-    //     break;
-    //   case 2:
-    //     height = inputRef.current.offsetTop;
-    //     checked[position] = true;
-    //     break;
-    //   default:
-    //     height = inputRef.current.offsetTop - 50;
-    // }
+    switch (position) {
+      case 0:
+        height = inputRef.current.offsetTop - 115;
+        checked[position] = true;
+        break;
+      case 1:
+        height = inputRef.current.offsetTop - 55;
+        checked[position] = true;
+        break;
+      case 2:
+        height = inputRef.current.offsetTop;
+        checked[position] = true;
+        break;
+      default:
+        height = inputRef.current.offsetTop - 50;
+    }
 
     setGunStyle({
       transform: "translateY(" + height + "px)",
@@ -271,8 +271,8 @@ const Work = ({ clientWidth }) => {
                     </p>
                     <p className="mb-1 text-lg">{WORK[activeIndex]?.title}</p>
                     <p className="italic text-sm font-thin">
-                      {/* {company?.startDate} -{" "}
-                    {company?.endDate ? company?.endDate : "Present"} */}
+                      {company?.startDate} -{" "}
+                    {company?.endDate ? company?.endDate : "Present"}
                       {WORK[activeIndex]?.range}
                     </p>
                     <ul className="text-base mt-6 list-disc ml-2 z-30">

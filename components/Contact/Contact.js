@@ -65,7 +65,7 @@ const Contact = () => {
   const emptyForm = () => {
     setFormData(initialState);
   };
-
+components
   const handleSubmit = (e) => {
     e.preventDefault();
 

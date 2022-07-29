@@ -82,7 +82,7 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
             {project.tech.map((el, i) => (
               <img
                 className={`${i % 2 === 0 && "ml-16"} mb-4`}
-                src={`/projects/tech/${el}.svg`}
+                src={`/skills/${el}.svg`}
                 alt={el}
                 height={45}
                 width={45}

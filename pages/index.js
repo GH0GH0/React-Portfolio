@@ -17,6 +17,8 @@ import Collaboration from "@/components/Collaboration/Collabaration";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Scripts from "@/components/Scripts/Scripts";
+import { ContactUs } from "@/components/Contact/mailer";
+import Diplomes from "@/components/Diplomes/Diplomes";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -46,8 +48,9 @@ export default function Home() {
 
   const consoleLog = () => {
     console.log(
-      "%c  ____  _           _     _       ____                          _\n / ___|| |__  _   _| |__ | |__   |  _ \\ ___  _ ____      ____ _| |\n \\___ \\| '_ \\| | | | '_ \\| '_ \\  | |_) / _ \\| '__\\ \\ /\\ / / _` | |\n  ___) | | | | |_| | |_) | | | | |  __/ (_) | |   \\ V  V / (_| | |\n |____/|_| |_|\\__,_|_.__/|_| |_| |_|   \\___/|_|    \\_/\\_/ \\__,_|_|\n",
-      "background: #212121; color: #6b17e8;"
+      "%c     ____          __    __         _ _          ____         __    __         _ _    \n   /  ___|        |  |  |  |      /  _  \\      /  ___|       |  |  |  |      /  _  \\   \n  |  |            |  |__|  |     |  | |  |    |  |           |  |__|  |     |  | |  | \n  |  |   _        |   __   |     |  | |  |    |  |  _        |   __   |     |  | |  | \n   \\  \\_| |       |  |  |  |     |  |_|  |    \\  \\_| |       |  |  |  |     |  |_|  | \n    \\ __  |       |__|  |__|      \\ _ _ /      \\ __  |       |__|  |__|      \\ _ _ /  \n        |_|                                        |_|",
+      // "%c  ____  _           _     _       ____                          _\n / ___|| |__  _   _| |__ | |__   |  _ \\ ___  _ ____      ____ _| |\n \\___ \\| '_ \\| | | | '_ \\| '_ \\  | |_) / _ \\| '__\\ \\ /\\ / / _` | |\n  ___) | | | | |_| | |_) | | | | |  __/ (_) | |   \\ V  V / (_| | |\n |____/|_| |_|\\__,_|_.__/|_| |_| |_|   \\___/|_|    \\_/\\_/ \\__,_|_|\n",
+      "background: #212121; color: #7000ff;"
     );
 
     console.log(
@@ -81,6 +84,7 @@ export default function Home() {
               <div className="fixed top-0 left-0 h-screen w-screen -z-1"></div>
               <Hero />
               <About1 clientHeight={clientHeight} />
+              <Diplomes isDesktop={isDesktop} clientHeight={clientHeight} />
               <Skills />
               <About2 clientHeight={clientHeight} />
               <Projects isDesktop={isDesktop} clientHeight={clientHeight} />
@@ -88,6 +92,7 @@ export default function Home() {
               <Collaboration clientHeight={clientHeight} />
               <div className="pt-10 sm:pt-16 bg-gray-dark-4"></div>
               <Contact />
+              {/* <ContactUs /> */}
             </main>
             <Footer />
             <Scripts />

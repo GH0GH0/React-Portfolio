@@ -69,7 +69,8 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          <div className="mt-10">
+          <div className="flex flex-wrap mt-10">
+          <div className="mr-16 xs:mr-20 mb-6">
             <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq">
               LIBRARIES AND FRAMEWORKS
             </h3>
@@ -84,6 +85,23 @@ const Skills = () => {
                 />
               ))}
             </div>
+          </div>
+          <div className="mr-16 xs:mr-20 mb-6">
+            <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq">
+              3D MODELING
+            </h3>
+            <div className="flex flex-wrap gap-6 transform-gpu seq">
+              {SKILLS.Modeling.map((skill) => (
+                <Image
+                  key={skill}
+                  src={`/skills/${skill}.svg`}
+                  alt={skill}
+                  width={50}
+                  height={50}
+                />
+              ))}
+            </div>
+          </div>
           </div>
           <div className="flex flex-wrap mt-10">
             <div className="mr-16 xs:mr-20 mb-6">
@@ -102,12 +120,12 @@ const Skills = () => {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="mr-16 xs:mr-20 mb-6">
               <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq">
-                Other
+                MOTION DESIGN
               </h3>
               <div className="flex flex-wrap gap-6 transform-gpu seq">
-                {SKILLS.other.map((skill) => (
+                {SKILLS.MotionDesign.map((skill) => (
                   <Image
                     key={skill}
                     src={`/skills/${skill}.svg`}
@@ -118,6 +136,23 @@ const Skills = () => {
                 ))}
               </div>
             </div>
+            <div>
+              <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq">
+                TOOLS
+              </h3>
+              <div className="flex flex-wrap gap-6 transform-gpu seq">
+                {SKILLS.tools.map((skill) => (
+                  <Image
+                    key={skill}
+                    src={`/skills/${skill}.svg`}
+                    alt={skill}
+                    width={50}
+                    height={50}
+                  />
+                ))}
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>

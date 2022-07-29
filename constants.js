@@ -1,9 +1,9 @@
 export const METADATA = {
-  title: "Portfolio | Shubh Porwal",
+  title: "Portfolio | Ghouzali Abderrahmani",
   description:
-    "Shubh Porwal is a Full Stack Developer from Kuwait, interested in crafting beautiful and functional applications. Shubh is pursuing his undergraduate from Pandit Deendayal Energy University, Gujarat.",
-  siteUrl: "https://shubhporwal.com/",
-  twitterHandle: "@shubh731",
+    "Ghouzali Abderrahmani is a Full Stack Developer from France, interested in crafting beautiful and functional applications. Ghouzali ghouzali just got graduated from Paris 8 University, France.",
+  siteUrl: "",
+  twitterHandle: "@Ghozali_00",
 };
 
 export const MENULINKS = [
@@ -14,6 +14,10 @@ export const MENULINKS = [
   {
     name: "Skills",
     ref: "skills",
+  },
+  {
+    name: "Diplomes",
+    ref : "diplomes",
   },
   {
     name: "Projects",
@@ -38,23 +42,23 @@ export const TYPED_STRINGS = [
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: shubhporwal73@gmail.com",
+    url: "mailto: abderrahmani.ghouzali@gamil.com",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/shubhporwal/",
+    url: "https://www.linkedin.com/in/Ghouzali/",
   },
   {
     name: "github",
-    url: "https://github.com/shubh73",
+    url: "https://github.com/GH0GH0",
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/shubhii73/",
+    url: "https://www.instagram.com/ghozali_00/",
   },
   {
     name: "twitter",
-    url: "https://twitter.com/shubh731",
+    url: "https://twitter.com/ghozali_00",
   },
 ];
 
@@ -65,58 +69,60 @@ export const SKILLS = {
     "javascript",
     "typescript",
     "sass",
-    "cpp",
+    "php",
+    "c",
+    "C++",
+    "csharpe",
     "java",
     "python",
-    "firebase",
-    "moralis",
-    "stripe",
-    // "figma"
   ],
   librariesAndFrameworks: [
     "react",
-    "redux",
     "nextjs",
-    "tailwindcss",
-    "styledcomponents",
-    "antdesign",
-    "chakra-ui",
+    "jquery",
+    "threejs",
+    "bootstrap",
+    "django",
+    "flask",
+    
+  ],
+  Modeling: [
+    "unity",
+    "blender",
   ],
   databases: [
     "mysql",
+    "phpmyadmin",
     "mongodb",
   ],
-  other: ["nodejs", "git", "sanity-io"],
+  MotionDesign: [
+    "photoshop",
+    "illustrator",
+    "aftereffect",
+    "premierpro",
+  ],
+  tools: ["nodejs", "git", "visualstudio", "pycharm", "qt"],
 };
 
 export const PROJECTS = [
   {
-    name: "Airbnb",
-    image: "/projects/airbnb.webp",
-    blurImage: "/projects/blur/airbnb-blur.webp",
-    description: "Airbnb UI clone using NextJS + Tailwind CSS 🛏️",
-    gradient: ["#F14658", "#DC2537"],
+    name: "GallicBot",
+    image: "/projects/gallic.png",
+    blurImage: "/projects/blur/gallic.png",
+    description: "Chatbot  for Gallica 🤖 using Python + Flask ",
+    gradient: ["#fd4c4d", "#fff0ed"],
     url: "https://shubh73-airbnb.vercel.app/",
-    tech: ["react", "nextjs", "tailwindcss", "mapbox"],
+    tech: ["python", "flask", "javascript", "html", "css"],
   },
-  // {
-  //   name: "Shotime",
-  //   image: "",
-  //   blurImage: "",
-  //   description:
-  //     "Developed with complete E-commerce functionality and User Authentication 🛍️",
-  //   gradient: ["#FFCF1B", "#FF881B"],
-  //   url: "https://shubh73-shotime.vercel.app/",
-  //   tech: ["react", "tailwindcss", "redux", "mongodb", "stripe"],
-  // },
+
   {
-    name: "Medium",
-    image: "/projects/medium.webp",
-    blurImage: "/projects/blur/medium-blur.webp",
-    description: "Medium UI clone using NextJS + Tailwind CSS ✍🏻",
-    gradient: ["#FFA62E", "#EA4D2C"],
-    url: "https://shubh73-medium.vercel.app/",
-    tech: ["typescript", "react", "nextjs", "tailwindcss", "sanity.io"],
+    name: "Les Voix de l'Opera",
+    image: "/projects/lesvoixdelopera.png",
+    blurImage: "/projects/blur/lesvoixdelopera.png",
+    description: "Web App using Three.js + Html/Css ✍🏻",
+    gradient: ["#3e59d1", "#021259"],
+    url: "https://gh0gh0.github.io/Les-Voix-l-Opera/",
+    tech: ["threejs", "javascript", "html", "css"],
   },
   {
     name: "Inshorts",
@@ -141,10 +147,10 @@ export const PROJECTS = [
 
 export const WORK = [
   {
-    company: "Spacenos",
-    title: "Web Developer Intern",
-    location: "Bangalore, Karnataka",
-    range: "September - December 2021",
+    company: "Union Sportive de Gringy",
+    title: "Webmaster Designer",
+    location: "Grigny, France",
+    range: "October 2020- October 2022",
     responsibilities: [
       "Led the Full Stack revamp on the Admin Portal.",
       "Developed app integration with REST APIs, Google Maps, User Auth, Stripe and other libraries.",
@@ -152,30 +158,42 @@ export const WORK = [
     ],
     url: "https://spacenos.com/",
   },
-  // {
-  //   company: "Spacenos",
-  //   title: "SDE",
-  //   location: "Bangalore, Karnataka",
-  //   range: "September - December 2021",
-  //   responsibilities: [
-  //     "Led the Full Stack revamp on the Admin Portal.",
-  //     "Developed app integration with REST APIs, Google Maps, User Auth, Stripe and other libraries.",
-  //     "Implemented CRUD features for all the services and providers",
-  //   ],
-  //   url: "https://spacenos.com/",
-  // },
-  // {
-  //   company: "Spacenos",
-  //   title: "Web Developer Intern",
-  //   location: "Bangalore, Karnataka",
-  //   range: "September - December 2021",
-  //   responsibilities: [
-  //     "Led the Full Stack revamp on the Admin Portal.",
-  //     "Developed app integration with REST APIs, Google Maps, User Auth, Stripe and other libraries.",
-  //     "Implemented CRUD features for all the services and providers.",
-  //   ],
-  //   url: "https://spacenos.com/",
-  // },
+  
 ];
+export const DIPLOMES = [
+  {
+    university : "Paris 8 ",
+    title : "Creation and Digital Edition",
+    image :"/projects/paris8.svg",
+    location: "Paris, France",
+    range: "2020-2022",
+    level :" Master 2",
+    gradient: ["#000066", "#021259"],
+    mention : "Honors",
+    url: "/projects/university/paris8.pdf"
+  },
+  {
+    university : "Verailles ",
+    title : "computer science",
+    image : "/projects/universiteversaille.svg",
+    location: "Paris, France",
+    range: "2019-2021",
+    level :"Bachelor",
+    gradient: ["#000066", "#6699FF"],
+    mention : "Good enough",
+    url: "/projects/university/versailles.pdf"
+  },
+  {
+    university : "Béjaïa ",
+    title : "computer science",
+    image : "/projects/bejaia.png",
+    location: "Béjaia, Algeria",
+    range: "2016-2017",
+    level :"Bachelor",
+    gradient: ["#000066", "#6699FF"],
+    mention : "Good",
+    url: "/projects/university/"
+  }
+]
 
 export const GTAG = "G-5HCTL2TJ5W";

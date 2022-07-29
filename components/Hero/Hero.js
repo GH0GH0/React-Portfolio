@@ -31,7 +31,7 @@ const Hero = () => {
       .to(targetSection.current, { opacity: 1, duration: 2 })
       .from(
         targetSection.current.querySelectorAll(".seq"),
-        { opacity: 0, duration: 0.5, stagger: 0.5 },
+        { opacity: 0, duration: 0.5, stagger: 0.5 ,width :20},
         "<"
       );
 
@@ -87,8 +87,8 @@ const Hero = () => {
           Hi, my name is
         </h5>
         <h1 className={`${styles.heroName} text-white text-6xl font-semibold`}>
-          <span className={`relative ${styles.emphasize} seq`}>Shubh</span>
-          <span className="seq"> Porwal</span>
+          <span className={`relative ${styles.emphasize} seq`}>Ghouzali</span>
+          <span className="seq"> Abderrahmani</span>
         </h1>
         <p>
           <span
@@ -113,7 +113,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
+        className="absolute invisible w-6/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16 " 
         ref={lottieRef}
       ></div>
     </section>

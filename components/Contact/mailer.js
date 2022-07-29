@@ -1,12 +1,14 @@
 import emailjs from "@emailjs/browser";
 
+
 const mail = ({ name, email, message }) => {
   return emailjs.send(
-    process.env.SERVICE_ID,
-    process.env.TEMPLATE_ID,
+    'service_nbzxbeq',
+    'template_n0qqc1k',
     { name, email, message },
-    process.env.USER_ID
+    'KR9ZnHq9rIzoyYe53'
   );
 };
 
 export default mail;
+
